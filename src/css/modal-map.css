@@ -1,0 +1,116 @@
+#modal-map {
+  position: fixed;
+  /* top: 30px;
+  right: 100px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  z-index: 99;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  border: 10px solid rgba(255, 255, 255, 1);
+  /*  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-map.modal-show {
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  /* top: 0;
+  right: 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translate(0, 0); */
+  opacity: 1;
+  visibility: visible;
+  border: 10px solid rgba(255, 255, 255, 1);
+  background-color: #9abfdd;
+}
+
+#modal-map .modal__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#modal-map .modal__close {
+  position: absolute;
+  z-index: 9;
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+#modal-map .modal__close svg {
+  fill: rgba(5, 0, 20, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+#modal-map .modal__close:hover svg {
+  fill: rgba(5, 0, 20, 0.75);
+  transform: scale(1.2);
+}
+
+#modal-map .modal__image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#modal-map .modal__image {
+  width: 2000px;
+  height: 3200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Add classes for panning the image */
+.modal__image-container.pan-up {
+  top: calc(50% + 50px);
+}
+
+.modal__image-container.pan-down {
+  top: calc(50% - 50px);
+}
+
+.modal__image-container.pan-left {
+  left: calc(50% + 50px);
+}
+
+.modal__image-container.pan-right {
+  left: calc(50% - 50px);
+}
+
+.modal__image--pan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  bottom: -10px;
+  left: -10px;
+  animation: shake 10s infinite;
+  text-align: center;
+  scale: 0.75;
+}
+.modal__image--pan-span {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  padding-top: 10px;
+  bottom: 10px;
+  left: 0px;
+  color: rgb(5, 0, 20, 0.9);
+}

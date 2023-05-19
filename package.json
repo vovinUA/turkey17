@@ -1,21 +1,32 @@
 {
-  "name": "vanilla-app-template",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "turkey2017",
+  "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "description": "",
+  "homepage": "https://vovinUA.github.io/turkey17",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
-    "preview": "vite preview"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /turkey17/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vovinUA/turkey17.git"
+  },
+  "keywords": [],
+  "author": "VovinUA <vovin_tool@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vovinUA/turkey17/issues"
   },
   "devDependencies": {
-    "vite": "^4.0.0",
-    "glob": "^8.1.0"
+    "parcel": "^2.7.0",
+    "parcel-bundler": "^1.12.5"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
   "dependencies": {
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1"
+    "animate.css": "^4.1.1",
+    "gsap": "^3.10.4",
+    "imagesloaded": "^5.0.0",
+    "jquery": "^3.6.4",
+    "splitting": "^1.0.6"
   }
 }
