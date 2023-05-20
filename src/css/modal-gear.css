@@ -34,17 +34,18 @@
 
 #modal-gear .modal__content {
   position: relative;
-  width: 100%;
+  aspect-ratio: 1/1;
   height: 100%;
   background: url(../img/modal-blobanimation.svg) no-repeat center center fixed;
   background-size: contain;
+  outline: 1px solid red;
 }
 
 #modal-gear .modal__close {
   position: absolute;
   z-index: 100;
   top: 10vh;
-  right: 25vw;
+  right: 5vw;
   cursor: pointer;
   outline: none;
   background: none;
@@ -54,13 +55,13 @@
 #modal-gear .modal__close svg {
   fill: rgba(0, 15, 30, 0.75);
   transition: all 0.25s ease-in-out;
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 #modal-gear .modal__close:hover svg {
   fill: rgba(0, 30, 60, 1);
   transition: all 0.25s ease-in-out;
-  transform: scale(1.4);
+  transform: scale(1.35);
 }
 
 #modal-gear .modal__image-container {
@@ -72,12 +73,5 @@
   aspect-ratio: 1/1;
   overflow: hidden;
   position: absolute;
+  outline: 1px solid green;
 }
-
-/* #modal-gear .modal__image {
-  width: 2000px;
-  height: 3200px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
