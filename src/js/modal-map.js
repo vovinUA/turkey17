@@ -80,7 +80,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 modalMap.addEventListener("click", (e) => {
-  if (e.target === modal) {
+  if (e.target === modalMap) {
     closeModal();
   }
 });

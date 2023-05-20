@@ -174,7 +174,8 @@ section.blur {
   fill: #fff;
   z-index: 2;
   opacity: 0.75;
-  animation: shake 10s infinite;
+  animation: shake 4s infinite;
+  margin-right: 2vw;
 }
 
 /* .frame__back--show {
@@ -262,40 +263,52 @@ section.blur {
   0% {
     transform: translateX(0px);
   }
-  18% {
+  14% {
     transform: translateX(0px);
   }
-  19% {
-    transform: translateX(-2px);
+  16% {
+    transform: translateX(-1px);
+  }
+  18% {
+    transform: translateX(1px);
   }
   20% {
-    transform: translateX(2px);
-  }
-  21% {
-    transform: translateX(-4px);
+    transform: translateX(-3px);
   }
   22% {
-    transform: translateX(4px);
-  }
-  23% {
-    transform: translateX(-6px);
+    transform: translateX(3px);
   }
   24% {
-    transform: translateX(6px);
-  }
-  25% {
-    transform: translateX(-4px);
+    transform: translateX(-6px);
   }
   26% {
-    transform: translateX(4px);
-  }
-  27% {
-    transform: translateX(-2px);
+    transform: translateX(6px);
   }
   28% {
-    transform: translateX(2px);
+    transform: translateX(-9px);
   }
-  29% {
+  30% {
+    transform: translateX(9px);
+  }
+  32% {
+    transform: translateX(-6px);
+  }
+  34% {
+    transform: translateX(6px);
+  }
+  36% {
+    transform: translateX(-3px);
+  }
+  38% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(-1px);
+  }
+  42% {
+    transform: translateX(1px);
+  }
+  44% {
     transform: translateX(0px);
   }
   100% {
